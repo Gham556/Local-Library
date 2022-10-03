@@ -13,7 +13,7 @@ var app = express();
 
 
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb+srv://Gham556:Falconpunch556%21@cluster0.rzu1kag.mongodb.net/local-library';
+const mongoDB = 'mongodb+srv://Gham556:Falconpunch556%21@cluster0.rzu1kag.mongodb.net/local_library';
 mongoose.connect(mongoDB)
 const db = mongoose.connection; 
 
