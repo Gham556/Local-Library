@@ -1,3 +1,4 @@
+require('dotenv').config('./env');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -13,7 +14,7 @@ var app = express();
 
 
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb+srv://Gham556:Falconpunch556%21@cluster0.rzu1kag.mongodb.net/local_library';
+const mongoDB = process.env.SECRET_KEY;
 mongoose.connect(mongoDB)
 const db = mongoose.connection; 
 
